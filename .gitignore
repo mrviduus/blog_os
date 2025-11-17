@@ -1,0 +1,80 @@
+# Rust build artifacts
+target/
+**/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo lock file - for libraries, exclude; for binaries, include
+# Since this is a kernel/OS project (binary), we track Cargo.lock
+
+# IDE and editor files
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS-specific files
+.DS_Store
+**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Bootimage artifacts
+bootimage/
+**/bootimage/
+*.bin
+*.iso
+
+# QEMU/virtualization files
+*.qcow2
+*.vmdk
+*.vdi
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# Log files
+*.log
+
+# Documentation build artifacts
+doc/
+docs/_build/
+
+# Test coverage
+*.profraw
+*.profdata
+coverage/
+
+# Temporary files
+*.temp
+*.tmp
+.tmp/
+
+# Python cache (for any build scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build directories
+build/
+dist/
+out/
+
+# Claude-specific
+.claude/
